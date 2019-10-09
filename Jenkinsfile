@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('jenkins-shared-library') _
+@Library('JenkinsSharedLibrary') _
 
 backendServicePipeline {
   developmentRepositoryUrl = 'git@heroku.com:dev-newservice-repository.git'
