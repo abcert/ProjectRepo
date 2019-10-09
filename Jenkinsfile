@@ -1,6 +1,14 @@
 #!groovy
 
-@Library('JenkinsSharedLibrary') _
+library(
+  identifier: 'JenkinsSharedLibrary@master',
+  retriever: modernSCM(
+    [
+      $class: 'GitSCMSource',
+      remote: 'https://github.com/abcert/JenkinsSharedLibrary.git'
+    ]
+  )
+)
 
 backendServicePipeline {
   developmentRepositoryUrl = 'git@heroku.com:dev-newservice-repository.git'
