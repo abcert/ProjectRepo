@@ -10,7 +10,7 @@ library(
   )
 )
 
-backendServicePipeline {
+cdoPipeline {
   developmentRepositoryBranch = 'master'
   stagingRepositoryBranch = 'release'
   productionRepositoryBranch = 'master'
