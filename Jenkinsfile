@@ -10,6 +10,7 @@ library(
   )
 )
 
+/*
 cdoPipeline {
   developmentRepositoryBranch = 'master'
   stagingRepositoryBranch = 'release'
@@ -17,4 +18,11 @@ cdoPipeline {
   slackNotificationChannel = '#backend-events'
   swaggerYamlFilename = 'newservice.yaml'
   projectName = 'newservice'
+}
+*/
+
+buildPipeline{
+  developmentRepositoryBranch = 'master'
+  stagingRepositoryBranch = 'release'
+  productionRepositoryBranch = 'master'
 }
