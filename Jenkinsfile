@@ -22,7 +22,12 @@ cdoPipeline {
 */
 
 buildPipeline{
-  developmentRepositoryBranch = 'master'
-  stagingRepositoryBranch = 'release'
-  productionRepositoryBranch = 'master'
+  crNumber = "CR12345"
+  ticketNumber = "T3403940234"
+  deploymentDate = "10/14/2019"
+  javaModule="javamodule"
+  scalaModule="scalamodule"
+  testTeamDLOrPersonEmailID="certification82@gmail.com"
+  devTeamDLOrPersonEmailID="certification82@gmail.com"
+  opsTeamDLOrPersonEmailID="certification82@gmail.com"
 }
